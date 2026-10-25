@@ -37,19 +37,19 @@ TIKTOK:"https://www.tiktok.com/@volt_egy.1"
      ╚══════════════════════════════════╝ -->
 <script>
 /* ============ المنتجات ============
-c: m=رجالي w=حريمي s=رياضي | p=السعر بعد الخصم | o=قبل الخصم | im=صور مفصولة بـ | | sz=المقاسات | col=الألوان */
+c: w=حريمي s=رياضي (ممكن الاتنين: ws) | p=السعر بعد الخصم | o=قبل الخصم | im=صور مفصولة بـ | | sz=المقاسات | col=الألوان */
 const OS="وان سايز",S5="M,L,XL,2XL,3XL";
 const P=[
-{id:1,n:"بنطلون بالون فِيت",c:"m",t:"بناطيل",p:650,o:800,sz:OS,col:"برجندي,أسود,زيتي,كاكي,رمادي غامق,رمادي فاتح",d:"قصة بالون واسعة من الفخذ وتضيق للأسفل، بكمر مرن عريض ورباط سحب. قماش ناعم ودافئ للخروجات والجامعة.",im:"zVyfprgs/215246-058|gbx11ktD/215246-259|RTxR96Zy/215246-008"},
-{id:2,n:"هودي LE MARAIS 1995",c:"mw",t:"هوديز",p:760,o:950,sz:OS,col:"بنفسجي,بني,برجندي,كحلي,وردي,أسود",d:"هودي أوفر سايز بطباعة أمامية أنيقة، جيب كانغارو وأساور مضلعة. خامة ناعمة تحافظ على الدفء وثبات الألوان.",im:"8LRjNjRX/215433-096|pBbKnCbG/215433-301|Z6S051Bh/215433-444"},
-{id:3,n:"جاكيت ياقة عالية",c:"mw",t:"جاكيتات",p:520,o:650,sz:OS,col:"أوف وايت,وردي,أحمر,أسود",d:"جاكيت خفيف مقاوم للرياح بياقة عالية وسحاب وأزرار كبس مخفية، وجيوب جانبية. يناسب حتى 85 كجم.",im:"ksMNwhHC/215600-881|8L4Qdf3c/215600-915|fKMTF5j/215600-980"},
+{id:1,n:"بنطلون بالون فِيت",c:"w",t:"بناطيل",p:650,o:800,sz:OS,col:"برجندي,أسود,زيتي,كاكي,رمادي غامق,رمادي فاتح",d:"قصة بالون واسعة من الفخذ وتضيق للأسفل، بكمر مرن عريض ورباط سحب. قماش ناعم ودافئ للخروجات والجامعة.",im:"zVyfprgs/215246-058|gbx11ktD/215246-259|RTxR96Zy/215246-008"},
+{id:2,n:"هودي LE MARAIS 1995",c:"w",t:"هوديز",p:760,o:950,sz:OS,col:"بنفسجي,بني,برجندي,كحلي,وردي,أسود",d:"هودي أوفر سايز بطباعة أمامية أنيقة، جيب كانغارو وأساور مضلعة. خامة ناعمة تحافظ على الدفء وثبات الألوان.",im:"8LRjNjRX/215433-096|pBbKnCbG/215433-301|Z6S051Bh/215433-444"},
+{id:3,n:"جاكيت ياقة عالية",c:"w",t:"جاكيتات",p:520,o:650,sz:OS,col:"أوف وايت,وردي,أحمر,أسود",d:"جاكيت خفيف مقاوم للرياح بياقة عالية وسحاب وأزرار كبس مخفية، وجيوب جانبية. يناسب حتى 85 كجم.",im:"ksMNwhHC/215600-881|8L4Qdf3c/215600-915|fKMTF5j/215600-980"},
 {id:4,n:"طقم هودي كروب وبنطلون",c:"ws",t:"أطقم",p:1100,o:1350,sz:OS,col:"رمادي غامق,بني غامق,رمادي فاتح,زيتي,عنابي,بني فاتح (جملي)",d:"طقم هودي كروب بسحاب وبنطلون واسع بخطوط بيضاء جانبية، من قطن ناعم يوفر الدفء والتهوية. اختاري اللون اللي يناسب ذوقك.",im:"DDKgtvwJ/215700-974|99Xp1dCk/215701-102|bgNPrQSR/215701-278"},
 {id:5,n:"جاكيت رياضي بسحاب وغطاء رأس",c:"ws",t:"جاكيتات",p:350,o:450,sz:"M,L,XL,2XL,3XL",col:"أسود,فوشيا",d:"سحاب كامل وغطاء رأس، فتحات إبهام وجيبان أماميان. قماش مرن لحرية الحركة في الجيم والخروج.",im:"RkNWxZBW/215835-867|KjpQf3rf/215835-262"},
 {id:6,n:"بنطلون رياضي فلاير",c:"ws",t:"بناطيل",p:350,o:450,sz:"M,L,XL,2XL,3XL,4XL,5XL,6XL,7XL",col:"برجندي,أسود,بيج,رمادي",d:"بنطلون رياضي نسائي فلاير بقصة واسعة من الأسفل، يمنحك قوامًا ممشوقًا وراحة كاملة للجيم والخروجات اليومية.",im:"cSpRTD7S/220254-389|DHty2Xkn/220254-267|pj5q4HtS/220254-187"},
 {id:7,n:"جاكيت دراي فيت نصف سحاب",c:"ws",t:"جاكيتات",p:350,o:450,sz:S5,col:"أحمر,برجندي,رمادي,بينك",d:"جاكيت رياضي Active Dri-Fit بسحاب قصير، يجمع الأناقة والراحة أثناء التمرين أو في إطلالاتك الكاجوال اليومية.",im:"jtGQVYt/220350-442|TMLtVkKt/220351-232|ZRhHszsy/220351-123"},
 {id:8,n:"تيشرت دراي فيت أكمام طويلة",c:"ws",t:"تيشرتات",p:340,o:420,sz:S5,col:"وردي",d:"تيشرت نايكي دراي فيت نسائي بلون وردي جذاب وأكمام طويلة، مثالي للجري والجيم والإطلالات الكاجوال المريحة.",im:"QF0GhTj7/220450-127"},
-{id:9,n:"بنطلون سويت واسع",c:"ms",t:"بناطيل",p:520,o:650,sz:"M,L,XL,2XL",col:"رمادي فاتح,أسود",d:"قصة واسعة بقطن ناعم وخصر مطاطي برباط وجيوب جانبية عميقة. راحة طول اليوم.",im:"1JLpZxCK/220554-373|WN4Tyc8D/220554-390"},
-{id:10,n:"هودي سحاب مبطن",c:"mw",t:"هوديز",p:680,o:830,sz:OS,col:"أسود,زيتي فاتح",d:"هودي بسحاب أمامي عملي وقبعة واسعة يواكب أحدث صيحات الموضة، مناسب للنزهات والجامعة والجلسات الكاجوال.",im:"Jj0XXf5m/220653-299|1fZwHJ0j/220652-875"},
+{id:9,n:"بنطلون سويت واسع",c:"s",t:"بناطيل",p:520,o:650,sz:"M,L,XL,2XL",col:"رمادي فاتح,أسود",d:"قصة واسعة بقطن ناعم وخصر مطاطي برباط وجيوب جانبية عميقة. راحة طول اليوم.",im:"1JLpZxCK/220554-373|WN4Tyc8D/220554-390"},
+{id:10,n:"هودي سحاب مبطن",c:"w",t:"هوديز",p:680,o:830,sz:OS,col:"أسود,زيتي فاتح",d:"هودي بسحاب أمامي عملي وقبعة واسعة يواكب أحدث صيحات الموضة، مناسب للنزهات والجامعة والجلسات الكاجوال.",im:"Jj0XXf5m/220653-299|1fZwHJ0j/220652-875"},
 {id:11,n:"بنطلون بتفصيلة قميص كاروهات",c:"w",t:"بناطيل",p:650,o:800,sz:OS,col:"أسود,رمادي فاتح",d:"بنطلون بتفصيلة قميص مربعات (كاروهات) مربوط على الخصر، يمنحك مظهرًا متجددًا ومميزًا دون الحاجة لتنسيق قطع إضافية.",im:"2Y3RrvhY/220747-558|9f1c4JS/220748-011"},
 {id:12,n:"هودي Sunday Club",c:"w",t:"هوديز",p:799,o:970,sz:OS,col:"وردي,كحلي,أوف وايت,أسود,موف,أخضر",d:"هودي شتوي مبطن بطباعة Sunday Club وجيب كانغارو وغطاء رأس واسع.",im:"dJtmHbQS/220837-643|Zp8dHqwm/220837-552|DPHzBDvY/220837-344"},
 {id:13,n:"طقم دايفينج جاكيت وبنطلون",c:"ws",t:"أطقم",p:920,o:1150,sz:S5,col:"أسود,رمادي",d:"طقم دايفينج حريمي أنيق يجمع الأناقة العملية وحرية الحركة، مثالي للتمارين والخروجات السريعة وإطلالات الكاجوال.",im:"3YYdbxW0/220956-818|Zp7qJ63Q/220956-448"},
@@ -73,14 +73,14 @@ const MORE={1:"قصة بالون فِيت واسعة من الفخذين وتض�
 </script>
 <!-- 3) كود البيكسل (مفيش داعي تعدّل هنا) -->
 <script>
-function pixels(){const C=CONFIG;
-if(C.FB_PIXEL){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init",C.FB_PIXEL);fbq("track","PageView")}
-if(C.TIKTOK_PIXEL){!function(w,d,t){w.TiktokAnalyticsObject=t;var n=w[t]=w[t]||[];n.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];n.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat([].slice.call(arguments,0)))}};for(var i=0;i<n.methods.length;i++)n.setAndDefer(n,n.methods[i]);n.load=function(e){var o=d.createElement("script");o.async=!0;o.src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};n.load(C.TIKTOK_PIXEL);n.page()}(window,document,"ttq")}
-if(C.GA_ID){const s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id="+C.GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",C.GA_ID)}}
-pixels();
+function pixels(){const C=CONFIG,ok=v=>/^[\w-]{3,40}$/.test(String(v||"").trim()),FB=ok(C.FB_PIXEL)?String(C.FB_PIXEL).trim():"",TT=ok(C.TIKTOK_PIXEL)?String(C.TIKTOK_PIXEL).trim():"",GA=ok(C.GA_ID)?String(C.GA_ID).trim():"";
+if(FB){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init",FB);fbq("track","PageView")}
+if(TT){!function(w,d,t){w.TiktokAnalyticsObject=t;var n=w[t]=w[t]||[];n.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];n.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat([].slice.call(arguments,0)))}};for(var i=0;i<n.methods.length;i++)n.setAndDefer(n,n.methods[i]);n.load=function(e){var o=d.createElement("script");o.async=!0;o.src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};n.load(TT);n.page()}(window,document,"ttq")}
+if(GA){const s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id="+GA;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",GA)}}
+try{pixels()}catch(e){console.warn("[Volt] pixel error",e)}
 </script>
 <meta name="theme-color" content="#1b1b1d"><title>Volt Store | فولت ستور</title>
-<meta name="description" content="فولت ستور: ملابس حريمي ورجالي ورياضي بتصميمات عصرية وأسعار مميزة.">
+<meta name="description" content="فولت ستور: ملابس حريمي ورياضي بتصميمات عصرية وأسعار مميزة.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -108,7 +108,7 @@ main{max-width:1180px;margin:auto;padding:16px}
 .dots{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;gap:9px;z-index:3}.dots i{width:9px;height:9px;border-radius:99px;background:#fff5;transition:.3s}.dots i.on{width:36px;background:var(--gd)}
 .st{text-align:center;font-size:30px;font-weight:800;margin:44px 0 6px}.st b{color:var(--gd)}
 .all{display:block;text-align:center;color:var(--mut);font-size:14px;margin-bottom:14px}.st+.cats,.st+.grid,.st+.chips{margin-top:18px}
-.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .cat{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;border:1px solid var(--br)}
 .cat img{width:100%;height:100%;object-fit:cover;transition:.4s}.cat:hover img{transform:scale(1.06)}
 .cat span{position:absolute;inset:auto 0 0;padding:34px 10px 12px;background:linear-gradient(transparent,#000d);font-weight:800;font-size:clamp(16px,3.4vw,24px);text-align:center;color:var(--gd)}
@@ -170,72 +170,103 @@ footer h4{color:var(--gd);margin:0 0 8px}footer a{display:block;padding:2px 0}
 <footer><div class="ft" id="ft"></div></footer>
 <nav class="tb"><a href="#home" data-h="home" onclick="F.t='';F.q=''"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>الرئيسية</a><a href="#sale" data-h="sale" onclick="F.t='';F.q=''"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 2 3.1-.3 1 3 2.6 1.8-.9 3 .9 3-2.6 1.8-1 3-3.1-.3L12 22l-2.4-2-3.1.3-1-3-2.6-1.8.9-3-.9-3 2.6-1.8 1-3 3.1.3z"/><path d="M9 15l6-6"/><circle cx="9.5" cy="9.5" r=".8"/><circle cx="14.5" cy="14.5" r=".8"/></svg>الخصومات</a><a href="#cart" data-h="cart"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 7H6"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>عربة التسوق<em id="cc">0</em></a><a id="wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>تواصل معنا</a><a href="#shop" data-h="shop" onclick="F.t='';F.q=''"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>الفئات</a></nav><div class="toast" id="ts"></div>
 <script>
-const G={m:"رجالي",w:"حريمي",s:"رياضي"};
-const NAV=[["home","الرئيسية"],["shop-m","رجالي"],["shop-w","حريمي"],["shop-s","رياضي"],["sale","العروض"]];
+/* ===== حماية: لو في خطأ كتابة في الإعدادات أو المنتجات ===== */
+if(typeof CONFIG==="undefined"||typeof P==="undefined"||!Array.isArray(P)){document.getElementById("app").innerHTML='<div style="padding:40px 16px;text-align:center"><h2>في خطأ في كتابة الإعدادات أو المنتجات</h2><p>غالبًا فاصلة ناقصة أو علامة تنصيص مفتوحة. افتح Console في المتصفح (F12) وهتلاقي رقم السطر.</p></div>';throw new Error("CONFIG or P failed to load")}
+const G={w:"حريمي",s:"رياضي"},NAV=[["home","الرئيسية"],["shop-w","حريمي"],["shop-s","رياضي"],["sale","العروض"]],MAXQ=10,MAXLINES=20;
+const C=Object.assign({STORE:"Volt Store",LOGO:"",WHATSAPP:"",PHONE:"",VF_CASH:"",INSTAPAY:"",SHIP:0,CUR:"ج.م",INSTAGRAM:"",FACEBOOK:"",TIKTOK:"",TG_TOKEN:"",TG_CHAT:""},CONFIG);
+C.SHIP=Math.max(0,Number(C.SHIP)||0);C.CUR=String(C.CUR||"ج.م");
+const WA=String(C.WHATSAPP||"").replace(/\D/g,""),PHONE=String(C.PHONE||"").replace(/[^\d+]/g,""),wl=()=>WA.replace(/^20/,"0");
 /* ============ أدوات ============ */
-const $=s=>document.querySelector(s),pid=i=>P.find(x=>x.id==i),C=CONFIG;
-const img=s=>{const[a,b]=s.split("/");return"https://i.ibb.co/"+a+"/IMG-20261023-"+b+".jpg"};
-const ims=x=>x.im.split("|").map(img),fmt=n=>n.toLocaleString("en-US")+" "+C.CUR;
-let cart=[];try{cart=JSON.parse(localStorage.getItem("volt")||"[]")}catch(e){}
-cart=cart.filter(i=>pid(i.id));
-const sv=()=>{try{localStorage.setItem("volt",JSON.stringify(cart))}catch(e){}{const n=cart.reduce((a,b)=>a+b.q,0),e=$("#cc");e.textContent=n;e.style.display=n?"":"none"}};
+const $=s=>document.querySelector(s);
+const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));   // للـHTML
+const he=s=>String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));                              // لتلجرام
+const ar=s=>String(s??"").replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d)).trim();
+const warn=m=>console.warn("[Volt] "+m);
+const PH="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400"><rect width="300" height="400" fill="#2d2d31"/><text x="150" y="205" font-size="24" fill="#a0a0a6" text-anchor="middle" font-family="Arial">VOLT</text></svg>');
+const toUrl=s=>{s=String(s||"").trim();if(/^https?:\/\//i.test(s))return s;const p=s.split("/");return p.length==2&&p[0]&&p[1]?"https://i.ibb.co/"+p[0]+"/IMG-20261023-"+p[1]+".jpg":""};
+const splitL=v=>String(v??"").split(/[,،]/).map(s=>s.trim()).filter(Boolean),MORE_=typeof MORE==="undefined"||!MORE?{}:MORE;
+/* ============ تجهيز المنتجات (بيتجاهل أي منتج ناقص بدل ما الموقع يقع) ============ */
+const PR=[],seen=new Set();
+P.forEach((x,k)=>{x=x||{};const id=Number(x.id),n=String(x.n||"").trim(),p=Number(x.p);
+if(!(id>0)||!n||!(p>0)){warn("المنتج رقم "+(k+1)+" ناقص (id أو n أو p) وتم تجاهله");return}
+if(seen.has(id)){warn("رقم المنتج "+id+" مكرر وتم تجاهله");return}
+seen.add(id);const o=Number(x.o)>p?Number(x.o):0,im=String(x.im||"").split("|").map(toUrl).filter(Boolean),sz=splitL(x.sz);
+PR.push({id,n,p,o,c:String(x.c||"").toLowerCase().replace(/[^ws]/g,"")||"w",t:String(x.t||"").trim()||"أخرى",d:String(x.d||"").trim(),col:splitL(x.col),sz:sz.length?sz:["وان سايز"],im:im.length?im:[PH],f:String(MORE_[id]||"").split("|").map(s=>s.trim()).filter(Boolean)})});
+if(!PR.length)warn("لا توجد منتجات صالحة");
+const pid=i=>PR.find(x=>x.id==i),TYPES=[...new Set(PR.map(x=>x.t))],disc=x=>x.o?Math.round((1-x.p/x.o)*100):0;
+const fmt=n=>(Number(n)||0).toLocaleString("en-US")+" "+C.CUR;
+/* ============ السلة (بتتنضف تلقائي لو فيها بيانات قديمة أو تالفة) ============ */
+let cart=[];try{const r=JSON.parse(localStorage.getItem("volt")||"[]");if(Array.isArray(r))cart=r}catch(e){}
+cart=cart.filter(i=>{const x=i&&pid(i.id);return x&&Number.isInteger(i.q)&&i.q>0&&i.q<=MAXQ&&x.sz.includes(i.size)&&(x.col.length?x.col.includes(i.color):!i.color)}).slice(0,MAXLINES).map(i=>({id:Number(i.id),color:i.color||"",size:i.size,q:i.q}));
+const subTotal=()=>cart.reduce((a,i)=>a+pid(i.id).p*i.q,0),tot=()=>subTotal()+C.SHIP;
+const sv=()=>{try{localStorage.setItem("volt",JSON.stringify(cart))}catch(e){}const n=cart.reduce((a,b)=>a+b.q,0),e=$("#cc");e.textContent=n;e.style.display=n?"":"none"};
 function toast(m){const t=$("#ts");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1800)}
 function track(ev,v,items,oid){const it=items||[],d={value:v||0,currency:"EGP",content_type:"product",content_ids:it.map(i=>String(i.id)),contents:it.map(i=>({id:String(i.id),quantity:i.q||1})),num_items:it.reduce((a,i)=>a+(i.q||1),0)};
-const m={view:["ViewContent","ViewContent","view_item"],add:["AddToCart","AddToCart","add_to_cart"],checkout:["InitiateCheckout","InitiateCheckout","begin_checkout"],buy:["Purchase","PlaceAnOrder","purchase"]}[ev];
+const m={view:["ViewContent","ViewContent","view_item"],add:["AddToCart","AddToCart","add_to_cart"],checkout:["InitiateCheckout","InitiateCheckout","begin_checkout"],buy:["Purchase","PlaceAnOrder","purchase"]}[ev];if(!m)return;
 try{if(window.fbq){oid?fbq("track",m[0],d,{eventID:oid}):fbq("track",m[0],d)}window.ttq&&ttq.track(m[1],d);window.gtag&&gtag("event",m[2],{value:d.value,currency:"EGP",transaction_id:oid,items:it.map(i=>({item_id:String(i.id),quantity:i.q||1}))})}catch(e){}}
 /* ============ مكونات ============ */
-function card(x){const a=ims(x);return`<a class="pc" href="#p-${x.id}"><div class="pi"><span class="bd">-${Math.round((1-x.p/x.o)*100)}%</span><img src="${a[0]}" alt="${x.n}" loading="lazy">${a[1]?`<img src="${a[1]}" alt="" loading="lazy">`:""}</div><div class="pb"><h3>${x.n}</h3><div class="pr">${fmt(x.p)}<s>${fmt(x.o)}</s></div></div></a>`}
+const imgTag=(u,alt,x="")=>`<img src="${E(u)}" alt="${E(alt)}" ${x} onerror="this.onerror=null;this.src=PH">`;
+const card=x=>`<a class="pc" href="#p-${x.id}"><div class="pi">${x.o?`<span class="bd">-${disc(x)}%</span>`:""}${imgTag(x.im[0],x.n,'loading="lazy"')}${x.im[1]?imgTag(x.im[1],"",'loading="lazy"'):""}</div><div class="pb"><h3>${E(x.n)}</h3><div class="pr">${fmt(x.p)}${x.o?`<s>${fmt(x.o)}</s>`:""}</div></div></a>`;
 const grid=a=>`<div class="grid">${a.map(card).join("")||"<p>مفيش منتجات في القسم ده دلوقتي.</p>"}</div>`;
-const sec=(t,l)=>{const w=t.split(" "),g=w.pop();return`<h2 class="st">${w.join(" ")} <b>${g}</b></h2>${l?`<a class="all" href="#${l}" onclick="F.t='';F.q=''">عرض الكل</a>`:""}`};
+const sec=(t,l)=>{const w=String(t).split(" "),g=w.pop();return`<h2 class="st">${E(w.join(" "))} <b>${E(g)}</b></h2>${l?`<a class="all" href="#${l}" onclick="F.t='';F.q=''">عرض الكل</a>`:""}`};
+const dsc=x=>`<div class="dsc"><h3>وصف المنتج</h3>${x.d?`<p>${E(x.d)}</p>`:""}${x.f.length?`<ul>${x.f.map(f=>`<li>${E(f)}</li>`).join("")}</ul>`:""}<div class="sp"><div><span>المقاسات</span><b>${E(x.sz.join(" - "))}</b></div>${x.col.length?`<div><span>الألوان</span><b>${E(x.col.join(" - "))}</b></div>`:""}</div></div>`;
 /* ============ الصفحات ============ */
 let F={g:"",t:"",q:"",s:"",sale:0},SEL={},tm;
 const V={
-home(){const sl=[["عرض","وقت الصفقات! خصومات على كل المنتجات","جميع العروض","sale","تسوق حريمي","shop-w",12],["جديد","كولكشن الشتاء وصل: هوديز وأطقم وبناطيل","تسوق الآن","shop","رجالي","shop-m",2],["رياضي","أطقم وجاكيتات رياضية بخامة دراي فيت","القسم الرياضي","shop-s","العروض","sale",13]];
-return`<div class="hero">${sl.map((s,i)=>`<div class="sl${i?"":" on"}"><img src="${ims(pid(s[6]))[0]}" alt=""><div class="tx"><span class="bg2">${s[0]}</span><h1>${s[1]}</h1><div class="bt"><a class="cta" href="#${s[3]}">${s[2]}</a><a class="cta ol" href="#${s[5]}">${s[4]}</a></div></div></div>`).join("")}<div class="dots">${sl.map((_,i)=>`<i class="${i?"":"on"}"></i>`).join("")}</div></div>
-${sec("استكشف الفئات")}<div class="cats">${[["m",2],["w",12],["s",4]].map(([g,i])=>`<a class="cat" href="#shop-${g}"><img src="${ims(pid(i))[0]}" alt="" loading="lazy"><span>${G[g]}</span></a>`).join("")}</div>
-${sec("وصل حديثًا","shop")}${grid([...P].reverse().slice(0,8))}
-${sec("أحدث العروض","sale")}${grid(P.filter(x=>x.o-x.p>=100).slice(0,4))}
-${sec("تسوق حسب النوع")}<div class="chips" style="justify-content:center">${[...new Set(P.map(x=>x.t))].map(t=>`<a class="chip" href="#shop" onclick="F.t='${t}'">${t}</a>`).join("")}</div>`},
+home(){if(!PR.length)return`<div class="ok"><h1>المتجر قيد التجهيز</h1><p>هنضيف المنتجات قريبًا.</p></div>`;
+const hp=(g,i)=>pid(i)||PR.find(x=>x.c.includes(g))||PR[0],
+sl=[["عرض","وقت الصفقات! خصومات على كل المنتجات","جميع العروض","sale","تسوق حريمي","shop-w",hp("w",12)],["جديد","كولكشن الشتاء وصل: هوديز وأطقم وبناطيل","تسوق الآن","shop","العروض","sale",hp("w",2)],["رياضي","أطقم وجاكيتات رياضية بخامة دراي فيت","القسم الرياضي","shop-s","كل المنتجات","shop",hp("s",13)]],
+cats=[["w",12],["s",4]].filter(([g])=>PR.some(x=>x.c.includes(g))),sale=PR.filter(x=>x.o).slice(0,4);
+return`<div class="hero">${sl.map((s,i)=>`<div class="sl${i?"":" on"}">${imgTag(s[6].im[0],"")}<div class="tx"><span class="bg2">${s[0]}</span><h1>${s[1]}</h1><div class="bt"><a class="cta" href="#${s[3]}">${s[2]}</a><a class="cta ol" href="#${s[5]}">${s[4]}</a></div></div></div>`).join("")}<div class="dots">${sl.map((_,i)=>`<i class="${i?"":"on"}"></i>`).join("")}</div></div>
+${sec("استكشف الفئات")}<div class="cats">${cats.map(([g,i])=>`<a class="cat" href="#shop-${g}">${imgTag(hp(g,i).im[0],"",'loading="lazy"')}<span>${G[g]}</span></a>`).join("")}</div>
+${sec("وصل حديثًا","shop")}${grid([...PR].reverse().slice(0,8))}
+${sale.length?sec("أحدث العروض","sale")+grid(sale):""}
+${TYPES.length?sec("تسوق حسب النوع")+`<div class="chips" style="justify-content:center">${TYPES.map((t,i)=>`<a class="chip" href="#shop" onclick="F.t=TYPES[${i}]">${E(t)}</a>`).join("")}</div>`:""}`},
 shop(){return`${sec(F.sale?"العروض":F.g?G[F.g]:"كل المنتجات")}
-<div class="chips">${["",...new Set(P.map(x=>x.t))].map(t=>`<span class="chip ${F.t==t?"on":""}" onclick="F.t='${t}';route()">${t||"الكل"}</span>`).join("")}</div>
-<div class="tools"><input placeholder="ابحث عن منتج" value="${F.q}" oninput="F.q=this.value;drawList()"><select onchange="F.s=this.value;drawList()"><option value="">الترتيب</option><option value="a" ${F.s=="a"?"selected":""}>الأرخص</option><option value="d" ${F.s=="d"?"selected":""}>الأغلى</option></select></div><div id="ls"></div>`},
-product(id){const x=pid(id);if(!x)return"<p>المنتج غير موجود.</p>";const a=ims(x),cols=x.col?x.col.split(","):[],szs=x.sz.split(",");
-SEL={id:x.id,color:cols.length==1?cols[0]:"",size:szs.length==1?szs[0]:"",q:1};track("view",x.p,[x]);
-const opt=(arr,k)=>arr.map(v=>`<span class="chip ${SEL[k]==v?"on":""}" onclick="SEL.${k}='${v}';pick(this)">${v}</span>`).join("");
-return`<div class="pd"><div class="gal"><div class="main"><img id="mi" src="${a[0]}" alt="${x.n}"></div><div class="th">${a.map((u,i)=>`<img class="${i?"":"on"}" src="${u}" alt="" onclick="$('#mi').src='${u}';document.querySelectorAll('.th img').forEach(e=>e.classList.remove('on'));this.classList.add('on')">`).join("")}</div></div>
-<div><small style="color:var(--mut)">${x.c.split("").map(g=>G[g]).join(" · ")} · ${x.t}</small><h1>${x.n}</h1><div class="pr">${fmt(x.p)}<s>${fmt(x.o)}</s> <span class="chip on" style="font-size:12px;padding:1px 10px">وفّر ${fmt(x.o-x.p)}</span></div>
-${cols.length?`<div class="lb">اللون</div><div class="opt" data-k="color">${opt(cols,"color")}</div>`:""}
-<div class="lb">المقاس</div><div class="opt" data-k="size">${opt(szs,"size")}</div><div class="err" id="er"></div>
+<div class="chips"><span class="chip ${F.t?"":"on"}" onclick="setT(-1)">الكل</span>${TYPES.map((t,i)=>`<span class="chip ${F.t==t?"on":""}" onclick="setT(${i})">${E(t)}</span>`).join("")}</div>
+<div class="tools"><input placeholder="ابحث عن منتج" maxlength="60" value="${E(F.q)}" oninput="F.q=this.value;drawList()"><select onchange="F.s=this.value;drawList()"><option value="">الترتيب</option><option value="a" ${F.s=="a"?"selected":""}>الأرخص</option><option value="d" ${F.s=="d"?"selected":""}>الأغلى</option></select></div><div id="ls"></div>`},
+product(id){const x=pid(id);if(!x)return`<div class="ok"><h1>المنتج غير موجود</h1><a class="cta" style="display:inline-block" href="#shop">تصفح المنتجات</a></div>`;
+SEL={id:x.id,color:x.col.length==1?x.col[0]:"",size:x.sz.length==1?x.sz[0]:"",q:1};track("view",x.p,[{id:x.id,q:1}]);
+const opt=(arr,k)=>arr.map((v,i)=>`<span class="chip ${SEL[k]==v?"on":""}" onclick="selOpt('${k}',${i},this)">${E(v)}</span>`).join(""),rel=PR.filter(y=>y.id!=x.id&&y.t==x.t).slice(0,4);
+return`<div class="pd"><div class="gal"><div class="main">${imgTag(x.im[0],x.n,'id="mi"')}</div><div class="th">${x.im.map((u,i)=>imgTag(u,"",`class="${i?"":"on"}" onclick="thumb(${i},this)"`)).join("")}</div></div>
+<div><small style="color:var(--mut)">${E([...x.c].map(g=>G[g]).filter(Boolean).join(" · "))} · ${E(x.t)}</small><h1>${E(x.n)}</h1><div class="pr">${fmt(x.p)}${x.o?`<s>${fmt(x.o)}</s> <span class="chip on" style="font-size:12px;padding:1px 10px">وفّر ${fmt(x.o-x.p)}</span>`:""}</div>
+${x.col.length?`<div class="lb">اللون</div><div class="opt" data-k="color">${opt(x.col,"color")}</div>`:""}
+<div class="lb">المقاس</div><div class="opt" data-k="size">${opt(x.sz,"size")}</div><div class="err" id="er"></div>
 <div class="lb">الكمية</div><div class="q"><button onclick="qty(-1)">−</button><b id="qq">1</b><button onclick="qty(1)">+</button></div>
 <button class="big" onclick="addc(0)">أضف للسلة</button><button class="big alt" onclick="addc(1)">اطلب الآن</button></div></div>${dsc(x)}
-${sec("منتجات قد تعجبك")}${grid(P.filter(y=>y.id!=x.id&&y.t==x.t).slice(0,4))}`},
-cart(){if(!cart.length)return`<div class="ok"><h1>السلة فاضية</h1><a class="cta" href="#shop">ابدأ التسوق</a></div>`;
-const sub=cart.reduce((a,i)=>a+pid(i.id).p*i.q,0);if(!window._ci){window._ci=1;track("checkout",sub,cart)}
-return`${sec("سلة التسوق")}<div class="cl"><div>${cart.map((i,k)=>{const x=pid(i.id);return`<div class="row"><img src="${ims(x)[0]}" alt=""><div class="nm">${x.n}<small>${[i.color,i.size].filter(Boolean).join(" · ")}</small><small>${fmt(x.p)}</small></div><div class="q"><button onclick="cq(${k},-1)">−</button>${i.q}<button onclick="cq(${k},1)">+</button></div></div>`}).join("")}</div>
+${rel.length?sec("منتجات قد تعجبك")+grid(rel):""}`},
+cart(){if(!cart.length)return`<div class="ok"><h1>السلة فاضية</h1><a class="cta" style="display:inline-block" href="#shop">ابدأ التسوق</a></div>`;
+const sub=subTotal();if(!window._ci){window._ci=1;track("checkout",sub,cart.map(i=>({id:i.id,q:i.q})))}
+return`${sec("سلة التسوق")}<div class="cl"><div>${cart.map((i,k)=>{const x=pid(i.id);return`<div class="row">${imgTag(x.im[0],"")}<div class="nm">${E(x.n)}<small>${E([i.color,i.size].filter(Boolean).join(" · "))}</small><small>${fmt(x.p)}</small></div><div class="q"><button onclick="cq(${k},-1)">−</button>${i.q}<button onclick="cq(${k},1)">+</button></div></div>`}).join("")}</div>
 <div class="box"><div class="tot"><span>المجموع</span><span>${fmt(sub)}</span></div>${C.SHIP?`<div class="tot"><span>الشحن</span><span>${fmt(C.SHIP)}</span></div><div class="tot"><span>الإجمالي</span><span>${fmt(sub+C.SHIP)}</span></div>`:""}
-<form onsubmit="return send(event)"><input name="name" placeholder="الاسم بالكامل" required><input name="phone" type="tel" inputmode="tel" placeholder="رقم الموبايل" required pattern="[0-9٠-٩+ ]{10,15}"><input name="phone2" type="tel" inputmode="tel" placeholder="رقم احتياطي (اختياري)"><input name="gov" placeholder="المحافظة" required><textarea name="addr" rows="2" placeholder="العنوان بالتفصيل" required></textarea><textarea name="note" rows="2" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+<form onsubmit="return send(event)" novalidate><input name="name" placeholder="الاسم بالكامل" maxlength="80" autocomplete="name" required><input name="phone" type="tel" inputmode="tel" placeholder="رقم الموبايل" maxlength="20" autocomplete="tel" required><input name="phone2" type="tel" inputmode="tel" placeholder="رقم احتياطي (اختياري)" maxlength="20"><input name="gov" placeholder="المحافظة" maxlength="40" required><textarea name="addr" rows="2" placeholder="العنوان بالتفصيل" maxlength="300" autocomplete="street-address" required></textarea><textarea name="note" rows="2" placeholder="ملاحظات إضافية (اختياري)" maxlength="300"></textarea>
+<input name="hp_check" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <div class="lb">طريقة الدفع</div><div class="pm">${PAY.map((p,i)=>`<label class="${i?"":"on"}"><input type="radio" name="pay" value="${p[0]}" ${i?"":"checked"} onchange="setPay(this)"><span>${p[1]}</span></label>`).join("")}</div><div id="pinfo">${payInfo("cod")}</div>
 <div class="err" id="er"></div><button class="big" id="sb" style="margin:0">تأكيد الطلب</button></form></div></div>`}};
-const dsc=x=>`<div class="dsc"><h3>وصف المنتج</h3><p>${x.d}</p><ul>${(MORE[x.id]||"").split("|").filter(Boolean).map(f=>`<li>${f}</li>`).join("")}</ul><div class="sp"><div><span>المقاسات</span><b>${x.sz.split(",").join(" - ")}</b></div>${x.col?`<div><span>الألوان</span><b>${x.col.split(",").join(" - ")}</b></div>`:""}</div></div>`;
-function dosearch(e){e.preventDefault();F.q=$("#sq").value;F.t="";if(location.hash=="#shop")route();else location.hash="shop";return false}
-function buildDrawer(){$("#drc").innerHTML=`<h3 style="margin-top:0">الأقسام</h3>`+[["shop","كل المنتجات"],["shop-m","رجالي"],["shop-w","حريمي"],["shop-s","رياضي"],["sale","العروض"]].map(n=>`<a class="dl" href="#${n[0]}" onclick="F.t='';F.q=''">${n[1]}</a>`).join("")+`<h3>الأنواع</h3>`+[...new Set(P.map(x=>x.t))].map(t=>`<a class="dl" href="#shop" onclick="F.t='${t}'">${t}</a>`).join("")}
+function dosearch(e){e.preventDefault();F.q=$("#sq").value.slice(0,60);F.t="";if(location.hash=="#shop")route();else location.hash="shop";return false}
+function buildDrawer(){$("#drc").innerHTML=`<h3 style="margin-top:0">الأقسام</h3>`+[["shop","كل المنتجات"],["shop-w","حريمي"],["shop-s","رياضي"],["sale","العروض"]].map(n=>`<a class="dl" href="#${n[0]}" onclick="F.t='';F.q=''">${n[1]}</a>`).join("")+(TYPES.length?`<h3>الأنواع</h3>`+TYPES.map((t,i)=>`<a class="dl" href="#shop" onclick="F.t=TYPES[${i}]">${E(t)}</a>`).join(""):"")}
 document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;$("#dr").classList.remove("on");if(a.getAttribute("href")==location.hash)setTimeout(route,0)});
 $("#dr").addEventListener("click",e=>{if(e.target.id=="dr")e.target.classList.remove("on")});
 /* ============ التفاعل ============ */
-function drawList(){let a=P.filter(x=>(!F.g||x.c.includes(F.g))&&(!F.t||x.t==F.t)&&(!F.sale||x.o>x.p)&&(x.n+x.t).toLowerCase().includes(F.q.toLowerCase()));if(F.s)a.sort((x,y)=>F.s=="a"?x.p-y.p:y.p-x.p);$("#ls").innerHTML=grid(a)}
+function setT(i){F.t=i<0?"":TYPES[i]||"";route()}
+function drawList(){const q=F.q.trim().toLowerCase();const a=PR.filter(x=>(!F.g||x.c.includes(F.g))&&(!F.t||x.t==F.t)&&(!F.sale||x.o)&&(!q||(x.n+" "+x.t).toLowerCase().includes(q)));if(F.s)a.sort((x,y)=>F.s=="a"?x.p-y.p:y.p-x.p);$("#ls").innerHTML=grid(a)}
 function pick(el){el.parentNode.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));el.classList.add("on")}
-function qty(d){SEL.q=Math.max(1,SEL.q+d);$("#qq").textContent=SEL.q}
-function addc(go){const x=pid(SEL.id);if(x.col&&!SEL.color){$("#er").textContent="اختار اللون الأول";return}if(!SEL.size){$("#er").textContent="اختار المقاس الأول";return}
-const f=cart.find(i=>i.id==SEL.id&&i.color==SEL.color&&i.size==SEL.size);f?f.q+=SEL.q:cart.push({...SEL});sv();track("add",x.p*SEL.q,[{id:x.id,q:SEL.q}]);go?location.hash="cart":toast("تمت الإضافة للسلة ✓")}
-function cq(k,d){cart[k].q+=d;if(cart[k].q<1)cart.splice(k,1);sv();route()}
-const PAY=[["cod","الدفع عند الاستلام"],["vf","فودافون كاش"],["ip","إنستا باي"]],PN=Object.fromEntries(PAY);
-const wl=()=>C.WHATSAPP.replace(/^20/,"0"),tot=()=>cart.reduce((a,i)=>a+pid(i.id).p*i.q,0)+C.SHIP;
-const ar=s=>String(s||"").replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d)).trim(),he=s=>String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function selOpt(k,i,el){const x=pid(SEL.id),v=x&&(k=="color"?x.col:x.sz)[i];if(v===undefined)return;SEL[k]=v;pick(el);const er=$("#er");if(er)er.textContent=""}
+function thumb(i,el){const x=pid(SEL.id);if(!x||!x.im[i])return;$("#mi").src=x.im[i];document.querySelectorAll(".th img").forEach(e=>e.classList.remove("on"));el.classList.add("on")}
+function qty(d){SEL.q=Math.min(MAXQ,Math.max(1,SEL.q+d));$("#qq").textContent=SEL.q}
+function addc(go){const x=pid(SEL.id),er=$("#er");if(!x)return;
+if(x.col.length&&!SEL.color){er.textContent="اختار اللون الأول";return}if(!SEL.size){er.textContent="اختار المقاس الأول";return}
+const f=cart.find(i=>i.id==x.id&&i.color==SEL.color&&i.size==SEL.size);
+if(f){if(f.q+SEL.q>MAXQ){er.textContent="أقصى كمية للقطعة الواحدة "+MAXQ;return}f.q+=SEL.q}else{if(cart.length>=MAXLINES){er.textContent="السلة وصلت للحد الأقصى";return}cart.push({id:x.id,color:SEL.color,size:SEL.size,q:SEL.q})}
+sv();track("add",x.p*SEL.q,[{id:x.id,q:SEL.q}]);if(go)location.hash="cart";else toast("تمت الإضافة للسلة ✓")}
+function cq(k,d){const i=cart[k];if(!i)return;i.q=Math.min(MAXQ,i.q+d);if(i.q<1)cart.splice(k,1);sv();route()}
+/* ============ الدفع والطلب ============ */
+const PAY=[["cod","الدفع عند الاستلام"],["vf","فودافون كاش"],["ip","إنستا باي"]],PN=Object.fromEntries(PAY),payNum=m=>m=="vf"?C.VF_CASH:C.INSTAPAY;
 function payInfo(m,t){if(m=="cod")return`<div class="pinfo">هتدفع قيمة الطلب للمندوب عند الاستلام.</div>`;
-const num=m=="vf"?C.VF_CASH:C.INSTAPAY,nm=PN[m];
-return`<div class="pinfo"><b>الدفع عبر ${nm}</b><p>قم بتحويل <b>${fmt(t)}</b> لهذا الرقم على ${nm}:</p><div class="num"><span dir="ltr">${num}</span><button type="button" onclick="cp('${num}')">نسخ</button></div><p>ولتأكيد الطلب لا تنسَ إرسال صورة من التحويل على واتساب على الرقم <b dir="ltr">${wl()}</b></p></div>`}
+const num=String(payNum(m)||"").trim(),nm=PN[m];if(!num)return`<div class="pinfo">رقم التحويل غير متاح حاليًا، تواصل معنا على واتساب.</div>`;
+return`<div class="pinfo"><b>الدفع عبر ${nm}</b><p>قم بتحويل <b>${fmt(t)}</b> لهذا الرقم على ${nm}:</p><div class="num"><span dir="ltr">${E(num)}</span><button type="button" onclick="cp('${m}')">نسخ</button></div><p>ولتأكيد الطلب لا تنسَ إرسال صورة من التحويل على واتساب على الرقم <b dir="ltr">${E(wl())}</b></p></div>`}
 function setPay(el){document.querySelectorAll(".pm label").forEach(l=>l.classList.toggle("on",l.contains(el)));$("#pinfo").innerHTML=payInfo(el.value,tot())}
-function cp(t){try{navigator.clipboard.writeText(t)}catch(e){}toast("تم نسخ الرقم ✓")}
+function cp(m){try{navigator.clipboard.writeText(String(payNum(m)||""))}catch(e){}toast("تم نسخ الرقم ✓")}
 function tgText(o){const c=o.customer,w=o.pay!="cod";
 return`🛍 <b>طلب جديد #${o.orderNo}</b>
 ━━━━━━━━━━━━━━
@@ -261,31 +292,48 @@ ${o.items.map((i,n)=>`${n+1}) <b>${he(i.name)}</b>
 💵 تحصيل عند الاستلام`}
 
 🕐 ${new Date().toLocaleString("ar-EG",{timeZone:"Africa/Cairo"})}`}
-function done(o){const c=o.customer,w=o.pay!="cod",wt=encodeURIComponent(`مرحبًا، أنا ${c.name}. دي صورة تحويل الطلب رقم ${o.orderNo} بمبلغ ${o.total} ج.م عبر ${PN[o.pay]}.`),r=(a,b)=>`<div><span>${a}</span><b>${he(b)}</b></div>`;
-$("#app").innerHTML=`<div class="ok"><div class="chk">✓</div><h1>تم استلام طلبك بنجاح</h1><p>رقم الطلب <b dir="ltr">#${o.orderNo}</b></p><div class="note2">هيتم التواصل معاك خلال 24 ساعة لتأكيد الأوردر</div></div>
+function done(o){const c=o.customer,w=o.pay!="cod",wt=encodeURIComponent(`مرحبًا، أنا ${c.name}. دي صورة تحويل الطلب رقم ${o.orderNo} بمبلغ ${o.total} ج.م عبر ${PN[o.pay]}.`),r=(a,b)=>`<div><span>${E(a)}</span><b>${E(b)}</b></div>`;
+$("#app").innerHTML=`<div class="ok"><div class="chk">✓</div><h1>تم استلام طلبك بنجاح</h1><p>رقم الطلب <b dir="ltr">#${E(o.orderNo)}</b></p><div class="note2">هيتم التواصل معاك خلال 24 ساعة لتأكيد الأوردر</div></div>
 <div class="dsc"><h3>بيانات التوصيل</h3><div class="sp">${r("الاسم",c.name)}${r("الموبايل",c.phone)}${c.phone2?r("احتياطي",c.phone2):""}${r("المحافظة",c.gov)}${r("العنوان",c.addr)}${c.note?r("ملاحظات",c.note):""}</div></div>
 <div class="dsc"><h3>تفاصيل الطلب</h3><div class="sp">${o.items.map(i=>r(i.name+(i.color||i.size?" ("+[i.color,i.size].filter(Boolean).join(" - ")+")":"")+" × "+i.qty,fmt(i.price*i.qty))).join("")}${r("المجموع",fmt(o.subtotal))}${o.shipping?r("الشحن",fmt(o.shipping)):""}${r("الإجمالي",fmt(o.total))}</div></div>
-<div class="dsc"><h3>طريقة الدفع: ${PN[o.pay]}</h3>${payInfo(o.pay,o.total)}${w?`<a class="wab" target="_blank" rel="noopener" href="https://wa.me/${C.WHATSAPP}?text=${wt}">إرسال صورة التحويل على واتساب</a>`:""}</div>
+<div class="dsc"><h3>طريقة الدفع: ${PN[o.pay]}</h3>${payInfo(o.pay,o.total)}${w&&WA?`<a class="wab" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${wt}">إرسال صورة التحويل على واتساب</a>`:""}</div>
 <a class="big" style="display:block;text-align:center;margin-top:16px" href="#home">رجوع للرئيسية</a>`;scrollTo(0,0)}
-async function send(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target)),b=$("#sb"),er=$("#er");
-if(!C.TG_TOKEN||!C.TG_CHAT){er.textContent="لم يتم ضبط بوت تلجرام بعد (TG_TOKEN و TG_CHAT في الإعدادات).";return false}
-const pm=f.pay;delete f.pay;f.name=f.name.trim();f.phone=ar(f.phone);f.phone2=ar(f.phone2);
-const sub=cart.reduce((a,i)=>a+pid(i.id).p*i.q,0),no="V"+Date.now().toString().slice(-7),
-o={orderNo:no,customer:f,pay:pm,items:cart.map(i=>({id:i.id,name:pid(i.id).n,color:i.color,size:i.size,qty:i.q,price:pid(i.id).p})),subtotal:sub,shipping:C.SHIP,total:sub+C.SHIP};
-b.disabled=true;b.textContent="جاري إرسال الطلب...";
-try{const r=await fetch("https://api.telegram.org/bot"+C.TG_TOKEN+"/sendMessage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:C.TG_CHAT,text:tgText(o),parse_mode:"HTML"})});if(!r.ok)throw 0;
-track("buy",o.total,cart.slice(),no);cart=[];sv();done(o)}
-catch(_){b.disabled=false;b.textContent="تأكيد الطلب";er.innerHTML=`حصلت مشكلة في إرسال الطلب. جرّب تاني أو اطلب عبر <a href="https://wa.me/${C.WHATSAPP}" style="text-decoration:underline">واتساب</a>.`}return false}
+const normPhone=s=>{const d=ar(s).replace(/[^\d+]/g,"").replace(/^(\+?20|0020)(?=1)/,"0");return/^01[0125]\d{8}$/.test(d)?d:""};
+const tgOk=()=>/^\d{5,}:[\w-]{20,}$/.test(String(C.TG_TOKEN).trim())&&/^(-?\d+|@\w+)$/.test(String(C.TG_CHAT).trim());
+let busy=0,lastSend=0;
+async function send(e){e.preventDefault();if(busy)return false;
+const f=Object.fromEntries(new FormData(e.target)),b=$("#sb"),er=$("#er");er.textContent="";
+if(!cart.length){er.textContent="السلة فاضية.";return false}
+if(f.hp_check){cart=[];sv();location.hash="home";return false}
+const name=String(f.name||"").trim().slice(0,80),phone=normPhone(f.phone),p2=String(f.phone2||"").trim(),phone2=p2?normPhone(p2):"",gov=String(f.gov||"").trim().slice(0,40),addr=String(f.addr||"").trim().slice(0,300),note=String(f.note||"").trim().slice(0,300);
+if(name.length<3){er.textContent="اكتب الاسم بالكامل.";return false}
+if(!phone){er.textContent="رقم الموبايل غير صحيح (11 رقم يبدأ بـ 010 أو 011 أو 012 أو 015).";return false}
+if(p2&&!phone2){er.textContent="الرقم الاحتياطي غير صحيح.";return false}
+if(gov.length<2||addr.length<8){er.textContent="اكتب المحافظة والعنوان بالتفصيل.";return false}
+if(!tgOk()){er.textContent="بوت تلجرام غير مضبوط: راجع TG_TOKEN و TG_CHAT في أول الملف.";return false}
+if(Date.now()-lastSend<15000){er.textContent="استنى ثواني وجرّب تاني.";return false}
+const pm=PAY.some(p=>p[0]==f.pay)?f.pay:"cod",sub=subTotal(),no="V"+Date.now().toString().slice(-7),
+o={orderNo:no,customer:{name,phone,phone2,gov,addr,note},pay:pm,items:cart.map(i=>({id:i.id,name:pid(i.id).n,color:i.color,size:i.size,qty:i.q,price:pid(i.id).p})),subtotal:sub,shipping:C.SHIP,total:sub+C.SHIP};
+busy=1;b.disabled=true;b.textContent="جاري إرسال الطلب...";
+const ac=new AbortController(),tmo=setTimeout(()=>ac.abort(),15000);
+try{const r=await fetch("https://api.telegram.org/bot"+String(C.TG_TOKEN).trim()+"/sendMessage",{method:"POST",headers:{"Content-Type":"application/json"},signal:ac.signal,body:JSON.stringify({chat_id:String(C.TG_CHAT).trim(),text:tgText(o),parse_mode:"HTML"})});
+if(!r.ok)throw new Error("telegram "+r.status);
+lastSend=Date.now();track("buy",o.total,cart.map(i=>({id:i.id,q:i.q})),no);cart=[];sv();done(o)}
+catch(err){console.error(err);b.disabled=false;b.textContent="تأكيد الطلب";er.innerHTML=`حصلت مشكلة في إرسال الطلب. جرّب تاني${WA?` أو اطلب عبر <a href="https://wa.me/${WA}" style="text-decoration:underline">واتساب</a>`:""}.`}
+finally{clearTimeout(tmo);busy=0}return false}
 /* ============ التوجيه ============ */
-function route(){const h=(location.hash||"#home").slice(1),[k,v]=h.split("-");let html;if(k!="cart")window._ci=0;$("#dr").classList.remove("on");
-if(k=="p")html=V.product(v);else if(k=="cart")html=V.cart();else if(k=="shop"||k=="sale"){F.sale=k=="sale"?1:0;F.g=k=="shop"?(v||""):"";html=V.shop()}else html=V.home();
+function route(){try{_route()}catch(e){console.error(e);$("#app").innerHTML=`<div class="ok"><h1>حصلت مشكلة</h1><p>حدّث الصفحة وجرّب تاني.</p><a class="cta" style="display:inline-block" href="#home">الرئيسية</a></div>`}}
+function _route(){const h=(location.hash||"#home").slice(1),m=/^([a-z]+)(?:-(\w+))?$/.exec(h),k=m?m[1]:"home",v=m&&m[2]||"";
+if(k!="cart")window._ci=0;$("#dr").classList.remove("on");let html;
+if(k=="p")html=V.product(v);else if(k=="cart")html=V.cart();else if(k=="shop"||k=="sale"){F.sale=k=="sale"?1:0;F.g=k=="shop"&&(v=="w"||v=="s")?v:"";html=V.shop()}else html=V.home();
 $("#app").innerHTML=html;document.querySelectorAll(".tb a").forEach(a=>a.classList.toggle("on",a.dataset.h==(k=="shop"||k=="sale"||k=="cart"?k:h==""||h=="home"?"home":"")));
-if($("#ls"))drawList();clearInterval(tm);const s=document.querySelectorAll(".sl"),d=document.querySelectorAll(".dots i");if(s.length>1){let i=0;tm=setInterval(()=>{s[i].classList.remove("on");d[i].classList.remove("on");i=(i+1)%s.length;s[i].classList.add("on");d[i].classList.add("on")},4500)}scrollTo(0,0)}
+if($("#ls"))drawList();clearInterval(tm);const s=document.querySelectorAll(".sl"),d=document.querySelectorAll(".dots i");if(s.length>1&&d.length==s.length){let i=0;tm=setInterval(()=>{s[i].classList.remove("on");d[i].classList.remove("on");i=(i+1)%s.length;s[i].classList.add("on");d[i].classList.add("on")},4500)}scrollTo(0,0)}
 addEventListener("hashchange",route);
 /* ============ تشغيل ============ */
-$("#lg").src=img(C.LOGO);$("#lg").onerror=function(){this.remove()};
-$("#wa").href="https://wa.me/"+C.WHATSAPP;
-$("#ft").innerHTML=`<div><h4>${C.STORE}</h4><p>ملابس حريمي ورجالي ورياضي بتصميمات عصرية وأسعار مميزة.</p></div><div><h4>الأقسام</h4>${NAV.map(n=>`<a href="#${n[0]}">${n[1]}</a>`).join("")}</div><div><h4>تواصل معنا</h4><a href="https://wa.me/${C.WHATSAPP}" target="_blank" rel="noopener">واتساب: ${C.WHATSAPP.replace(/^20/,"0")}</a><a href="tel:${C.PHONE}">اتصال: ${C.PHONE}</a></div><div><h4>تابعنا</h4><a href="${C.INSTAGRAM}" target="_blank" rel="noopener">إنستجرام</a><a href="${C.FACEBOOK}" target="_blank" rel="noopener">فيسبوك</a><a href="${C.TIKTOK}" target="_blank" rel="noopener">تيك توك</a></div>`;
+const lg=$("#lg"),lu=toUrl(C.LOGO);if(lu){lg.src=lu;lg.onerror=function(){this.remove()}}else lg.remove();
+$("#wa").href=WA?"https://wa.me/"+WA:"#home";
+const link=(u,t)=>/^https?:\/\//i.test(String(u||""))?`<a href="${E(u)}" target="_blank" rel="noopener noreferrer">${t}</a>`:"";
+$("#ft").innerHTML=`<div><h4>${E(C.STORE)}</h4><p>ملابس حريمي ورياضي بتصميمات عصرية وأسعار مميزة.</p></div><div><h4>الأقسام</h4>${NAV.map(n=>`<a href="#${n[0]}">${n[1]}</a>`).join("")}</div><div><h4>تواصل معنا</h4>${WA?`<a href="https://wa.me/${WA}" target="_blank" rel="noopener">واتساب: ${E(wl())}</a>`:""}${PHONE?`<a href="tel:${E(PHONE)}">اتصال: ${E(PHONE)}</a>`:""}</div><div><h4>تابعنا</h4>${link(C.INSTAGRAM,"إنستجرام")}${link(C.FACEBOOK,"فيسبوك")}${link(C.TIKTOK,"تيك توك")}</div>`;
 buildDrawer();sv();route();
 </script>
 </body>
